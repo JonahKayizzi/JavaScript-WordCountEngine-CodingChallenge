@@ -1,3 +1,4 @@
+const wordCountEngine = require('./challenge');
 const assert = require('assert');
 
 describe('count number of words in document', function () {
