@@ -15,6 +15,6 @@ describe('count number of words in document', function () {
       ['by', '1'],
       ['just', '1'],
     ];
-    assert.strictEqual(wordCountEngine(sampleDocument), result);
+    assert.deepStrictEqual(wordCountEngine(sampleDocument), result);
   });
 });
