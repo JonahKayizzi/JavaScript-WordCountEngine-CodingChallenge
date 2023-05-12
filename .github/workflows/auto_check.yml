@@ -1,0 +1,19 @@
+name: Auto Check
+
+on: [pull_request]
+
+jobs:
+ auto-check:
+  runs-on: ubuntu-latest
+  steps:
+  - uses: actions/checkout@v2
+  - name: Install Node.js
+   users: actions/setup-node@v2
+   with:
+    node-version: '14.x'
+  - name: Install dependencies
+   run: npm install eslint eslint-plugin-node eslint-plugin-standard eslint-config-standard --save-dev
+  - name: Run ESLint
+   run: npx eslint --ext .js .
+  - name: Run tests
+   run: npm test   
