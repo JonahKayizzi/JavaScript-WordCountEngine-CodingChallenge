@@ -99,6 +99,13 @@ To run tests, run the following command:
 ```sh
   npm run test
 ```
+OR 
+
+Submit a pull_request and ensure that all auto_checks pass
+
+<div align="center">
+  <img src="autocheck.PNG" alt="logo" width="850"  height="auto" />
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
